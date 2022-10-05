@@ -1,0 +1,260 @@
+body{
+    background: radial-gradient( #ffffff00 30%,  #000000 80% ) no-repeat, url("images/BackgroundTop1080.jpg") no-repeat;
+    background-size: cover ; 
+    
+    background-attachment: fixed;
+    color: #fff;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+nav > ul{
+    list-style-type: none;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+}
+nav > ul > li{
+    margin: auto 5%;
+    font-size: 1.3em;
+    line-height: 1.8em;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+li > i{
+    font-size: 1.6em;
+    text-align: center;
+    vertical-align: bottom;
+    
+}
+article{
+    margin-top: 15%;
+    margin-bottom: 11em;
+   
+    
+}
+.main-header,
+.sub-sentence{
+    color: #fff;
+    text-align: center;
+}
+h1{
+    font-size: 4em;
+    margin: 10px;
+}
+p{
+    font-size: 1.5em;
+   
+}
+.play{
+    margin-top: 5em;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: fit-content;
+}
+.play > i{
+    color: #ffffff;
+    font-size: 2.5em; 
+}
+section{
+    background-color: #000000;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    
+}
+.explore-gallery{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-evenly;
+    margin: 5% auto;
+    
+}
+.explore-container{
+    width: 100%;
+    margin-top: 3em;
+}
+.explore-header,
+.explore-paragraph{
+    color: #fff;
+    text-align: center ;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    margin: 2% auto;
+}
+.explore-paragraph{
+    opacity: 0.7;
+    letter-spacing: 0.07em;
+}
+.explore-header{
+    margin-top: 2em;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+}
+.explore-image-container{
+    width: 300px;
+    height: 400px;
+}
+.Norway{
+    background: url("images/NorwaySmall.jpg") center center;
+    background-size: cover;
+}
+.Canyon{
+    background: url("images/CanyonSmall.jpg") center center;
+    background-size: cover;
+}
+.Austria{
+    background: url("images/HallstatSmall.jpg") center center;
+    background-size: cover;
+}
+.explore-image-container > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    flex-direction: column;
+    letter-spacing: 0.02em;
+    width: 100%;
+    height: 100%;
+    text-shadow: 0 0 6px #020202;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
+    
+}
+.explore-image-container > a > span {
+    width: 100%;
+    display: block;
+    font-size: 0.8em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-bottom: 2em;
+}
+.link-more{
+    text-decoration: none;
+    color: #414174;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+    margin-bottom: 5%;
+    
+}
+.link-more > i {
+    font-size: 0.9em;
+    line-height: 2em;
+    padding: 0.1em;
+}
+.journal-posts{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: auto;
+
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 5%;
+
+    
+}
+.post > img {
+    width: 400px;
+    height: auto;
+}
+.date{
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+.post-header{
+    font-size: 1.6em;
+    letter-spacing: 0.025em;
+    margin: 0;
+}
+.post-paragraph{
+    text-align: center;
+    opacity: 0.8;
+    font-size: 1.4em;
+    letter-spacing: 0.05em;
+    line-height: 1.6em;
+}
+footer{
+    position: relative;
+    background: radial-gradient(#131b4b75 40%, #000000 60%) center  no-repeat ,url("images/BackgroundFooter.jpg") center center no-repeat;
+    background-attachment: fixed;
+    padding-top: 600px;
+}
+footer > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 45%;
+    list-style-type: none;
+    margin: auto;
+    
+}
+footer > ul > li {
+    opacity: 0.7;
+    margin: 3%;
+}
+@media screen and (max-width: 660px ) {
+    nav{
+        display: none;
+    }
+    .post-paragraph{
+        width: 80%;
+    }
+    .post {
+        width: 100%;
+    }
+    .post > img {
+        width: inherit;
+    }
+    
+}
+@media screen and (max-width: 700px ){
+    body{
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 1100px ) {
+    .explore-gallery {
+        flex-direction: column;
+        width: 300px;
+    }
+    .explore-image-container{
+        margin-bottom: 20%;
+    }
+}
+@media screen and (max-width: 1000px ) {
+    .journal-posts{
+        flex-direction: column;
+    }
+    .explore-paragraph{
+        width: 60%;
+    }
+    .explore-header{
+        width: 60%;
+    }
+}
